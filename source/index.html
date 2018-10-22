@@ -54,22 +54,22 @@
 		<biv class="container">
 			<section class="steps">
 				<h2 class="visually-hidden">Как пройти техосмотр?</h2>
-				<ul class="steps__list">
-					<li class="steps__item">
-						<b class="steps__number">Шаг 1</b>
-						<p class="steps__info">Заполяете заявку на сайте или присылаете нам фотографию ваших документов</p>
+				<ul class="steps__list list">
+					<li class="list__item">
+						<b class="list__promo">Шаг 1</b>
+						<p class="list__text">Заполяете заявку на сайте или присылаете нам фотографию ваших документов</p>
 					</li>
-					<li class="steps__item">
-						<b class="steps__number">Шаг 2</b>
-						<p class="steps__info">Наши специалисты обрабатывают вашу заявку. После обработки мы уведомим вас об этом</p>
+					<li class="list__item">
+						<b class="list__promo">Шаг 2</b>
+						<p class="list__text">Наши специалисты обрабатывают вашу заявку. После обработки мы уведомим вас об этом</p>
 					</li>
-					<li class="steps__item">
-						<b class="steps__number">Шаг 3</b>
-						<p class="steps__info">Ручная проверка карты в базе ГИБДД ЕАИСТО</p>
+					<li class="list__item">
+						<b class="list__promo">Шаг 3</b>
+						<p class="list__text">Ручная проверка карты в базе ГИБДД ЕАИСТО</p>
 					</li>
-					<li class="steps__item">
-						<b class="steps__number">Шаг 4</b>
-						<p class="steps__info">Оплата услуги удобным для вас способом: банковской картой, электронными деньгами</p>
+					<li class="list__item">
+						<b class="list__promo">Шаг 4</b>
+						<p class="list__text">Оплата услуги удобным для вас способом: банковской картой, электронными деньгами</p>
 					</li>
 				</ul>
 				<a href="#" class="steps__now-link btn" >Пройти техосмотр</a>
@@ -78,36 +78,142 @@
 		<biv class="container">
 			<section class="service">
 				<h2 class="service__title">Наши услуги</h2>
+				<a class="btn btn--transparent-body-border" href="#">Оставить заявку на прохождение ТО</a>
+				<form class="service__form" action="http://scooterlabs.com/echo" method="post">
+					<label for="number">введите номер автомобиля</label>
+					<input id="number" type="text" value="" name="date"	placeholder="2323СВ">
+					<button class="btn service__next">Далее</button>
+					<span>или</span>
+					<button class="btn service__manual btn-transparent-border">Ввести вручную</button>
+				</form>
 			</section>
 		</biv>
 		<biv class="container">
 			<section class="advantages">
 				<h2 class="advantges__title">Наши приимущества</h2>
+				<ul class="advantages__list list">
+					<li class="list__item">
+						<b class="list__promo">Официально</b>
+						<p class="list__text">Мгновенное внесение в базу ЕАИСТО ГИБДД</p>
+					</li>
+					<li class="list__item">
+						<b class="list__promo">Надежно</b>
+						<p class="list__text">Работаем с 2016
+							Оформлено >2000 карт</p>
+					</li>
+					<li class="list__item">
+						<b class="list__promo">Без посредников</b>
+						<p class="list__text">Операторы ТО аккредитованы РСА</p>
+					</li>
+					<li class="list__item">
+						<b class="list__promo">Удобно</b>
+						<p class="list__text">Платите после проверки карты по базе ЕАИСТО ГИБДД</p>
+					</li>
+					<li class="list__item">
+						<b class="list__promo">Все категории авто</b>
+						<p class="list__text">Единая стоимость для всех видов транспорта</p>
+					</li>
+					<li class="list__item">
+						<b class="list__promo">Онлайн поддержка</b>
+						<p class="list__text">Оперативная поддрежка в рабочие дни с 8:30 до 23:30</p>
+					</li>
+				</ul>
 			</section>
 		</biv>
 		<biv class="container">
 			<section class="questions">
 				<h2 class="questions__title">Частые вопросы</h2>
+				<button class="questions_btn questions_btn--active">Что такое диагностическая карта и зачем она нужна?</button>
+				<p class="questions_answer">Диагностическая карта является легитимной. Она вносится в официальную базу ГИБДД ЕАИСТО. Для проверки данных Вашей карты после её получения, перейдите по ссылке.</p>
+				<button class="questions_btn">Какие есть способы оплаты?</button>
+				<p class="questions_answer questions_answer--invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, voluptate.</p>
+				<button class="questions_btn">Что будет с диагностической картой, если ее не оплатить?</button>
+				<p class="questions_answer questions_answer--invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, totam.</p>
+				<button class="questions_btn">Какая дата оформления будет в диагностической карте?</button>
+				<p class="questions_answer questions_answer--invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, eveniet.</p>
+				<button class="questions_btn">Что будет с заявкой, если при вводе информации были допущены </button>
+				<p class="questions_answer questions_answer--invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, non.</p>
+				<button class="questions_btn">Страховые компании принимают
+					диагностические карты?</button>
+				<p class="questions_answer questions_answer--invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, in.</p>
+				<button class="questions_btn">Диагностическая карта официальная?</button>
+				<p class="questions_answer questions_answer--invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, in.</p>
+				<form class="questions__form" action="http://scooterlabs.com/echo" method="post">
+					<h3>Остались вопросы</h3>
+					<label for="user-name">Как вас зовут</label>
+					<input id="user-name" type="text" value="Иванов Иван" name="user-name"	placeholder="Иванов Иван">
+					<label for="user-phone">Ваш номер телефона</label>
+					<input id="user-phone" type="tel" value="+32" name="user-phone"	placeholder="+385030303">
+					<label for="user-mail">Ваш email адрес</label>
+					<input id="user-mail" type="email" value="bob@gmail.com" name="user-mail"	placeholder="ivan@gmail.com">
+					<label><input type="checkbox" name="accept-data-lost" value="yes">Согласен на обработку персональных данных</label>
+					<button class="btn service__next" type="submit">Далее</button>
+				</form>
 			</section>
 		</biv>
 		<biv class="container">
 			<section class="partners">
 				<h2 class="partners__title">Наши партнеры</h2>
+				<ul class="partner__list">
+					<li class="partner__item"><a href="#">ГосСтрах</a></li>
+					<li class="partner__item"><a href="#">ГосСтрах</a></li>
+					<li class="partner__item"><a href="#">ГосСтрах</a></li>
+					<li class="partner__item"><a href="#">ГосСтрах</a></li>
+					<li class="partner__item"><a href="#">ГосСтрах</a></li>
+					<li class="partner__item"><a href="#">ГосСтрах</a></li>
+					<li class="partner__item"><a href="#">ГосСтрах</a></li>
+					<li class="partner__item"><a href="#">ГосСтрах</a></li>
+				</ul>
 			</section>
 		</biv>
 		<biv class="container">
 			<section class="check-DB">
 				<h2 class="visually-hidden">Проверить номер диагностической карты в базе ГБДДД</h2>
+				<a class="btn btn--transparent-body-border" href="#">Проверить в базе ГБДДД</a>
+				<form class="check-DB__form" action="http://scooterlabs.com/echo" method="post">
+					<label for="card-number">Введите номер диагностической карты</label>
+					<input id="card-number" type="number"  name="card-number"	placeholder="XXXXXXXXXXXXXXXXXXXXXX">
+					<button	class="check-DB__btn btn" type="submit">Проверить</button>
+				</form>
 			</section>
 		</biv>
 		<biv class="container">
 			<section class="payment">
 				<h2 class="payment__title">Способы оплаты</h2>
+				<form class="payment__table" action="http://scooterlabs.com/echo" method="post">
+					<label for="perpose">Назанчение перевода</label>
+					<input id="perpose" type="number" name="card-number">
+					<label for="ammount">Сумма руб.</label>
+					<input id="ammount" type="number" name="ammount">
+					<p>способ оплаты</p>
+					<label><input type="radio" name="system" value="yandex-money"><span>YandexMoney</span></label>
+					<label><input type="radio" name="system" value="visa"><span>visa</span></label>
+					<label><input type="radio" name="system" value="master-card"><span>Master-Card</span></label>
+					<button class="btn">Перевести</button>
+				</form>
 			</section>
 		</biv>
 		<biv class="container">
 			<section class="contacts">
-				<h2 class="cotacts__title">Контакты и реквизиты</h2>
+				<h2 class="contacts__title">Контакты и реквизиты</h2>
+				<ul class="contacts-list list">
+					<li class="list__item">
+						<b class="list__promo">Телефон</b>
+						<p class="list__text">8 (800) 505-15-70</p>
+					</li>
+					<li class="list__item">
+						<b class="list__promo">Email</b>
+						<p class="list__text">support@е-техосмотр.рф</p>
+					</li>
+					<li class="list__item">
+						<b class="list__promo">Время работы</b>
+						<p class="list__text">c 8:00 до 23:00 (МСК),
+							без выходных</p>
+					</li>
+				</ul>
+				<p class="contacts__info">
+					Общество с ограниченной ответственностью «АвтоКонтроль» (ООО «АвтоКонтроль») — руководитель Василец Александр Николаевич. Зарегистрирован в реестре № 1804 от 11.01.2012 по адресу 143040, Московская обл., Одинцовский р-н, г. Голицыно, проезд Промышленный, 5
+				</p>
 			</section>
 			<p class="additional-info">Техосмотр недорого - сервис приема онлайн заявок на техосмотр, для последующего прохождения в авторизованном центре. Напоминаем: без техосмотра нельзя купить ОСАГО. Если Вы решили купить ОСАГО не забудьте о покупке диагностической карты - сделайте правильный выбор и обратитесь к профессионалам!Формируя сообщения и онлайн заявки на сайте, Вы соглашаетесь на обработку ваших персональных данных, приём звонков, получение сообщений, а также на информационную рассылку.</p>
 		</biv>
