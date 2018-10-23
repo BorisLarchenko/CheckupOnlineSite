@@ -161,6 +161,7 @@ body {
   padding: 15px 13px;
 
   font-family: "helveticaneuecyrmedium", "Arial", sans-serif;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-decoration: none;
@@ -168,6 +169,16 @@ body {
 
   background-color: @orange-my;
   border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: yellow;
+  color: grey;
+}
+
+.btn:active {
+  background-color: #ffb108;
+  color: #648039;
 }
 
 .container-wrapper {
@@ -190,5 +201,9 @@ body {
   .container-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .btn {
+    font-size: 16px;
   }
 }
