@@ -122,17 +122,19 @@ body {
   font-family: 'helveticaneuecyrmedium', "Arial", sans-serif;
   font-size: 16px;
   background-color: #ffffff;
+  color: @btn-color;
 }
 
 .container {
   width: 290px;
   margin: 0 auto;
   padding: 0 15px;
+  background-color: aquamarine;
 }
 
 .container--bgimage {
   width: 100%;
-
+  padding: 0;
   background-image: url("../img/bgDoItNow.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,4 +168,20 @@ body {
 
   background-color: @orange-my;
   border-radius: 5px;
+}
+
+.container-wrapper {
+  position: relative;
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .container-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }

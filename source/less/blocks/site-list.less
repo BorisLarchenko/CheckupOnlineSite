@@ -1,0 +1,43 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  margin-bottom: 30px;
+
+
+  font-family: "helveticaneuecyrmedium", "Arial", sans-serif;
+  font-size: 12px;
+  list-style: none;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  color: @btn-color;
+}
+
+.site-list__item {
+  padding-bottom: 20px;
+}
+
+.site-list__item:last-child {
+  padding-bottom: 0;
+}
+
+.site-list__item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-list__item--active a {
+  text-decoration: underline;
+  color: @orange-my;
+}
+
+@media (min-width: 960px) {
+  .site-list{
+    padding: 0;
+    margin: 0;
+  }
+
+  .site-list__item {
+    padding-bottom: 0;
+  }
+}

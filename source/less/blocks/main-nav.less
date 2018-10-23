@@ -17,22 +17,73 @@
   }
 
   .main-nav--opened .main-nav__contacts {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 55px;
+    margin-bottom: 30px;
   }
 
   .main-nav--opened .main-nav__list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    border-top: 1px solid #c6c6c6;
   }
 
   .main-nav--opened .main-nav__close {
+    position: relative;
+    top: 15px;
+    left: -15px;
     display: block;
+    align-self: flex-end;
+
+    background-color: transparent;
+    border: none;
   }
 
+    .main-nav__close::before {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      content: "";
+      display: block;
+      width: 23px;
+      height: 23px;
+      background: transparent url("../../img/main-navCross.png") no-repeat 50% 50%;
+      border: 1px solid #c6c6c6;
+      border-radius: 50%;
+    }
 
   .main-nav {
-    position: relative;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    padding: 0 15px;
+    margin-left: -15px;
+    width: 290px;
+    background-color: #0883ef;
+    border-radius: 10px;
   }
 
+}
+
+@media (min-width: 960px) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-around;
+
+    width: 550px;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-nav__contacts {
+    margin-left: 15px;
+  }
 }
 
 
