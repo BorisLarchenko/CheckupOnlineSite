@@ -1,0 +1,60 @@
+.page-header__logo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+.page-header__menu {
+  display: none;
+}
+
+@media (max-width: 959px) {
+  .page-header__menu {
+    position: relative;
+    display: block;
+    width: 75px;
+    text-align: end;
+    padding: 0 0;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #424242;
+  }
+
+  .page-header__menu::before {
+    position: absolute;
+    left: 10px;
+    bottom: 13px;
+    content: "";
+    display: block;
+    width: 22px;
+    height: 3px;
+    border-radius: 25%;
+    background-image: linear-gradient(rgba(66,66,66,0.75), rgba(179,179,179,0.75));
+    //background-color: rgba(66,66,66,0.75);
+    box-shadow: 0px 7px 0px 0px rgba(100,100,100,0.75), 0px 14px 0px 0px rgba(100,100,100,0.75);
+  }
+
+  .page-header__menu:hover {
+    color: @orange-my;
+  }
+
+  .page-header__menu:hover::before {
+    background-image: none;
+    background-color: @orange-my;
+    box-shadow: 0px 7px 0px 0px @orange-my, 0px 14px 0px 0px @orange-my;
+  }
+
+  .page-header__menu--active {
+     display: inline-block;
+     color: @orange-my;
+   }
+
+  .page-header__menu--active::before {
+    background-image: none;
+    background-color: @orange-my;
+    box-shadow: 0px 7px 0px 0px @orange-my, 0px 14px 0px 0px @orange-my;
+  }
+}
