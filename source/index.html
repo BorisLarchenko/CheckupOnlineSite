@@ -41,7 +41,7 @@
 		</div>
 	</header>
 	<main class="page-main">
-		<div class="container container--bgimage">
+		<div class="container container--bgimage container--bgimage-doItNow">
 			<section class="do-it-now">
 				<h2 class="do-it-now__title"> Техосмотр для асаго<span class="do-it-now__lower"> с онлайн проверкой</span></h2>
 				<p class="do-it-now__promo">Заполни заявку на получение
@@ -79,16 +79,18 @@
 				<a href="#" class="steps__now-link btn" >Пройти техосмотр</a>
 			</section>
 		</div>
-		<div class="container">
+		<div class="container container--bgimage container--bgimage-service container--padding">
 			<section class="service">
 				<h2 class="service__title">Наши услуги</h2>
 				<a class="btn btn--transparent-body-border" href="#">Оставить заявку на прохождение ТО</a>
 				<form class="service__form" action="http://scooterlabs.com/echo" method="post">
 					<label for="number">введите номер автомобиля</label>
-					<input id="number" type="text" value="" name="date"	placeholder="2323СВ">
+					<input class="service__form-input" id="number" type="text" value="" name="date"	placeholder="А1234БВ">
+
 					<button class="btn service__next">Далее</button>
 					<span>или</span>
 					<button class="btn service__manual btn-transparent-border">Ввести вручную</button>
+
 				</form>
 			</section>
 		</div>

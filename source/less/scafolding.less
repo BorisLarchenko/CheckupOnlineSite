@@ -131,13 +131,22 @@ body {
   background-color: aquamarine;
 }
 
+
+
 .container--bgimage {
   width: 100%;
   padding: 0;
-  background-image: url("../img/bgDoItNow.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.container--bgimage-doItNow {
+  background-image: url("../img/bgDoItNow.jpg");
+}
+
+.container--bgimage-service {
+  background-image: url("../img/bgService.jpg");
 }
 
 .header-wrapper {
@@ -181,8 +190,23 @@ body {
   color: #648039;
 }
 
+.btn--transparent-body-border {
+  align-self: stretch;
+  text-align: center;
+
+  letter-spacing: 0.025em;
+  padding: 15px 8px;
+  text-transform: none;
+  background-color: transparent;
+  border: 1px solid #adadad;
+}
+
 .container-wrapper {
   position: relative;
+}
+
+.container--padding {
+  padding: 35px 0;
 }
 
 @media (min-width: 960px) {
@@ -196,6 +220,10 @@ body {
     width: 100%;
     padding: 0;
     }
+
+  .container--padding {
+    padding: 35px 0;
+  }
 
 
   .container-wrapper {
