@@ -284,37 +284,83 @@ service__form-input--lch"  type="text" value="" name="date"	placeholder="А1234�
 		<div class="container container--bgimage">
 			<div class="stripe"></div>
 		</div>
-
-		<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-		
 		<div class="container">
 			<section class="partners">
-				<h2 class="partners__title">Наши партнеры</h2>
-				<ul class="partner__list">
-					<li class="partner__item"><a href="#">ГосСтрах</a></li>
-					<li class="partner__item"><a href="#">ГосСтрах</a></li>
-					<li class="partner__item"><a href="#">ГосСтрах</a></li>
-					<li class="partner__item"><a href="#">ГосСтрах</a></li>
-					<li class="partner__item"><a href="#">ГосСтрах</a></li>
-					<li class="partner__item"><a href="#">ГосСтрах</a></li>
-					<li class="partner__item"><a href="#">ГосСтрах</a></li>
-					<li class="partner__item"><a href="#">ГосСтрах</a></li>
+				<h2 class="partners__title service__title ">Наши партнеры</h2>
+				<ul class="partners__list">
+					<li class="partners__item">
+						<a href="#">
+							<span class="visually-hidden">ИнГосСтрах</span>
+							<picture class="partners__pic">
+								<source media="(min-width:960px)" srcset="img/partner1desc.png 1x, img/partner1desc@2.png 2x" >
+								<img class="partners__img" src="img/partner1mob.png" srcset="img/partner1mob@2.png 2x"  alt="Игосстрах" width="160" height="53">
+							</picture>
+						</a>
+					</li>
+					<li class="partners__item">
+						<a href="#">
+						<span class="visually-hidden">ИнГосСтрах</span>
+						<img class="partners__img--2" src="img/partner2desc.png" srcset="img/partner2desc@2.png 2x"  alt="Игосстрах" width="159" height="70">
+					</a>
+					</li>
+					<li class="partners__item">
+						<a href="#">
+						<span class="visually-hidden">ИнГосСтрах</span>
+						<img class="partners__img--3" src="img/partner3desc.png" srcset="img/partner3desc@2.png 2x"  alt="Пеко" width="160" height="45">
+					</a>
+					</li>
+					<li class="partners__item">
+						<a href="#">
+						<span class="visually-hidden">ИнГосСтрах</span>
+							<img class="partners__img--4" src="img/partner4desc.png" srcset="img/partner4desc@2.png 2x"  alt="BCX" width="160" height="42">
+					</a>
+					</li>
+					<li class="partners__item">
+						<a href="#">
+						<span class="visually-hidden">ИнГосСтрах</span>
+						<img class="partners__img--5" src="img/partner5desc@1x.png" srcset="img/partner5desc@2x.png 2x"  alt="Игосстрах" width="161" height="70">
+					</a>
+					</li>
+					<li class="partners__item">
+						<a href="#">
+						<span class="visually-hidden">ИнГосСтрах</span>
+							<img class="partners__img--6" src="img/partner6desc@1x.png" srcset="img/partner6desc@2x.png 2x"  alt="Тинькофф" width="160" height="54">
+					</a>
+					</li>
+					<li class="partners__item">
+						<a href="#">
+						<span class="visually-hidden">ИнГосСтрах</span>
+							<img class="partners__img--7" src="img/partner7desc@1x.png" srcset="img/partner7desc@2x.png 2x"  alt="Уралсиб" width="158" height="50">
+					</a>
+					</li>
+					<li class="partners__item">
+						<a href="#">
+						<span class="visually-hidden">ИнГосСтрах</span>
+							<img class="partners__img--8" src="img/partner8desc@1x.png" srcset="img/partner8desc@2x.png 2x"  alt="яндекс такси" width="158" height="45">
+					</a>
+					</li>
 				</ul>
 			</section>
 		</div>
 
 		<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-		<div class="container">
-			<section class="check-DB">
-				<h2 class="visually-hidden">Проверить номер диагностической карты в базе ГБДДД</h2>
-				<a class="btn btn--transparent-body-border" href="#">Проверить в базе ГБДДД</a>
-				<form class="check-DB__form" action="http://scooterlabs.com/echo" method="post">
-					<label for="card-number">Введите номер диагностической карты</label>
-					<input id="card-number" type="number"  name="card-number"	placeholder="XXXXXXXXXXXXXXXXXXXXXX">
-					<button	class="check-DB__btn btn" type="submit">Проверить</button>
-				</form>
-			</section>
+
+		<div class="container container--bgimage container--bgimage-check-DB container--padding">
+			<div class="container">
+				<section class="check-DB">
+					<h2 class="visually-hidden">Проверить номер диагностической карты в базе ГБДДД</h2>
+					<a class="btn btn--transparent-body-border" href="#">Проверить в базе ГБДДД</a>
+					<form class="check-DB__form" action="http://scooterlabs.com/echo" method="post">
+						<label for="card-number">Введите номер диагностической карты</label>
+						<input id="card-number" type="number"  name="card-number"	placeholder="XXXXXXXXXXXXXXXXXXXXXX">
+						<button	class="check-DB__btn btn" type="submit">Проверить</button>
+					</form>
+				</section>
+			</div>
 		</div>
+
+		<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
 		<div class="container">
 			<section class="payment">
 				<h2 class="payment__title">Способы оплаты</h2>
