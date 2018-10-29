@@ -55,6 +55,7 @@
 				<a href="#" class="do-it-now__now-link btn" >Пройти техосмотр сейчас</a>
 			</section>
 		</div>
+
 		<div class="container">
 			<section class="steps">
 				<h2 class="visually-hidden">Как пройти техосмотр?</h2>
@@ -79,6 +80,7 @@
 				<a href="#" class="steps__now-link btn" >Пройти техосмотр</a>
 			</section>
 		</div>
+
 		<div class="container container--bgimage container--bgimage-service container--padding">
 			<section class="service">
 				<h2 class="service__title">Наши услуги</h2>
@@ -209,6 +211,7 @@ service__form-input--lch"  type="text" value="" name="date"	placeholder="А1234�
 				</form>
 			</section>
 		</div>
+
 		<div class="container">
 			<section class="advantages">
 				<h2 class="advantges__title service__title">Наши преимущества</h2>
@@ -240,41 +243,52 @@ service__form-input--lch"  type="text" value="" name="date"	placeholder="А1234�
 					</li>
 				</ul>
 			</section>
-
 		</div>
+
 		<div class="container container--bgimage">
 			<div class="stripe"></div>
 		</div>
 		<div class="container">
 			<section class="questions">
 				<h2 class="questions__title service__title">Частые вопросы</h2>
-				<button class="questions_btn questions_btn--active">Что такое диагностическая карта и зачем она нужна?</button>
-				<p class="questions_answer">Диагностическая карта является легитимной. Она вносится в официальную базу ГИБДД ЕАИСТО. Для проверки данных Вашей карты после её получения, перейдите по ссылке.</p>
-				<button class="questions_btn">Какие есть способы оплаты?</button>
-				<p class="questions_answer questions_answer--invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, voluptate.</p>
-				<button class="questions_btn">Что будет с диагностической картой, если ее не оплатить?</button>
-				<p class="questions_answer questions_answer--invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, totam.</p>
-				<button class="questions_btn">Какая дата оформления будет в диагностической карте?</button>
-				<p class="questions_answer questions_answer--invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, eveniet.</p>
-				<button class="questions_btn">Что будет с заявкой, если при вводе информации были допущены </button>
-				<p class="questions_answer questions_answer--invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, non.</p>
-				<button class="questions_btn">Страховые компании принимают
-					диагностические карты?</button>
-				<p class="questions_answer questions_answer--invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, in.</p>
-				<button class="questions_btn">Диагностическая карта официальная?</button>
-				<p class="questions_answer questions_answer--invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, in.</p>
+
+				<!--+++++++++++++++++++++++++++++++++-->
+
+				<div class="questions__wrapper">
+					<button class="questions__btn">Что такое диагностическая карта и зачем она нужна?</button>
+					<p class="questions__answer">Диагностическая карта является легитимной. Она вносится в официальную базу ГИБДД ЕАИСТО. Для проверки данных Вашей карты после её получения, перейдите по ссылке.</p>
+					<button class="questions__btn">Какие есть способы оплаты?</button>
+					<p class="questions__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, voluptate.</p>
+					<button class="questions__btn questions__btn--active">Что будет с диагностической картой, если ее не оплатить?</button>
+					<p class="questions__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, totam.</p>
+					<button class="questions__btn">Какая дата оформления будет в диагностической карте?</button>
+					<p class="questions__answer ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, eveniet.</p>
+					<button class="questions__btn">Что будет с заявкой, если при вводе информации были допущены </button>
+					<p class="questions__answer ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, non.</p>
+					<button class="questions__btn">Страховые компании принимают
+						диагностические карты?</button>
+					<p class="questions__answer ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, in.</p>
+					<button class="questions__btn">Диагностическая карта официальная?</button>
+					<p class="questions__answer ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, in.</p>
+				</div>
+
+				<!--+++++++++++++++++++++++++++++++++-->
+
 				<form class="questions__form" action="http://scooterlabs.com/echo" method="post">
-					<h3>Остались вопросы</h3>
-					<label for="user-name">Как вас зовут</label>
-					<input id="user-name" type="text" value="Иванов Иван" name="user-name"	placeholder="Иванов Иван">
-					<label for="user-phone">Ваш номер телефона</label>
-					<input id="user-phone" type="tel" value="+32" name="user-phone"	placeholder="+385030303">
-					<label for="user-mail">Ваш email адрес</label>
-					<input id="user-mail" type="email" value="bob@gmail.com" name="user-mail"	placeholder="ivan@gmail.com">
-					<label><input type="checkbox" name="accept-data-lost" value="yes">Согласен на обработку персональных данных</label>
-					<button class="btn service__next" type="submit">Далее</button>
+					<h3 class="questions__form-title">Остались вопросы?</h3>
+					<label class="label questions__form-label" for="user-name">Как вас зовут</label>
+					<input class="questions__form-input input" id="user-name" type="text"  name="user-name"	placeholder="Иванов Иван">
+					<label class="label questions__form-label" for="user-phone">Ваш номер телефона</label>
+					<input class="questions__form-input input"  id="user-phone" type="tel"  name="user-phone"	placeholder="+385030303">
+					<label class="label questions__form-label" for="user-mail">Ваш email адрес</label>
+					<input class="questions__form-input input" id="user-mail" type="email" aria-placeholder="bob@gmail.com" name="user-mail"	placeholder="ivan@gmail.com">
+					<label class="checkbox questions__form-checkbox"><input class="checkbox__input" type="checkbox" name="accept-data-lost" value="yes"><span class="checkbox__icon">Согласен на обработку персональных данных</span></label>
+					<button class="btn service__next questions__button" type="submit">Отправить</button>
 				</form>
 			</section>
+		</div>
+		<div class="container container--bgimage">
+			<div class="stripe"></div>
 		</div>
 		<div class="container">
 			<section class="partners">
