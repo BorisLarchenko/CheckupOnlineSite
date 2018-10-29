@@ -14,6 +14,7 @@ var changeFormPagesForward = function () {
   formPages[formPageNumber].classList.toggle("service__form-tab--inactive");
   formPageNumber+=1;
   if (formPageNumber >= formPages.length ) {formPageNumber = 0};
+  if (formPageNumber == 3) {checkupForm.submit()};
   formPages[formPageNumber].classList.toggle("service__form-tab--inactive");
 };
 //find all buttons for list page forward
