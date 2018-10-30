@@ -349,11 +349,11 @@ service__form-input--lch"  type="text" value="" name="date"	placeholder="А1234�
 			<div class="container">
 				<section class="check-DB">
 					<h2 class="visually-hidden">Проверить номер диагностической карты в базе ГБДДД</h2>
-					<a class="btn btn--transparent-body-border" href="#">Проверить в базе ГБДДД</a>
+					<a class="btn btn--transparent-body-border check-DB__btn" href="#">Проверить в базе ГБДДД</a>
 					<form class="check-DB__form" action="http://scooterlabs.com/echo" method="post">
-						<label for="card-number">Введите номер диагностической карты</label>
-						<input id="card-number" type="number"  name="card-number"	placeholder="XXXXXXXXXXXXXXXXXXXXXX">
-						<button	class="check-DB__btn btn" type="submit">Проверить</button>
+						<label class="label check-DB__form-label" for="card-number">Введите номер диагностической карты</label>
+						<input class="input check-DB__form-input" id="card-number" type="text"  name="card-number"	placeholder="XXXXXXXXXXXXXXXXXXXXXX">
+						<button	class="check-DB__form-btn btn" type="submit">Проверить</button>
 					</form>
 				</section>
 			</div>
