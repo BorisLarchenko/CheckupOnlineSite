@@ -342,9 +342,6 @@ service__form-input--lch"  type="text" value="" name="date"	placeholder="А1234�
 				</ul>
 			</section>
 		</div>
-
-		<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
 		<div class="container container--bgimage container--bgimage-check-DB container--padding">
 			<div class="container">
 				<section class="check-DB">
@@ -363,20 +360,43 @@ service__form-input--lch"  type="text" value="" name="date"	placeholder="А1234�
 
 		<div class="container">
 			<section class="payment">
-				<h2 class="payment__title">Способы оплаты</h2>
-				<form class="payment__table" action="http://scooterlabs.com/echo" method="post">
-					<label for="perpose">Назанчение перевода</label>
-					<input id="perpose" type="number" name="card-number">
-					<label for="ammount">Сумма руб.</label>
-					<input id="ammount" type="number" name="ammount">
-					<p>способ оплаты</p>
-					<label><input type="radio" name="system" value="yandex-money"><span>YandexMoney</span></label>
-					<label><input type="radio" name="system" value="visa"><span>visa</span></label>
-					<label><input type="radio" name="system" value="master-card"><span>Master-Card</span></label>
-					<button class="btn">Перевести</button>
+				<h2 class="payment__title service__title">Способы оплаты</h2>
+				<form class="payment__form" action="http://scooterlabs.com/echo" method="post">
+					<div class="payment__form-lebel-wrapper">
+						<label class="label payment__form-label" for="perpose">Назанчение перевода</label>
+						<input class="input input0" id="perpose" type="text" name="card-number" placeholder="Номер диагностической карты">
+					</div>
+					<div class="payment__form-lebel-wrapper">
+						<label class="label payment__form-label payment__form-label1" for="ammount">Сумма  <span class="payment__visib-sm">руб.</span> </label>
+						<input class="input" id="ammount" type="text" name="ammount" placeholder="650"><span class="payment__visib-bm">руб.</span>
+					</div>
+					<div class="payment__form-lebel-wrapper">
+						<span class="label payment__form-label payment__form-label2">Способ оплаты</span>
+						<div class="payment__form-radio-wrapper">
+							<label class="payment__form-radio payment__form-radio1">
+								<input class="visually-hidden" type="radio" name="system" value="yandex-money">
+								<span class="payment__form-image1"></span>
+								<span class="visually-hidden">YandexMoney</span>
+							</label>
+							<label class="payment__form-radio payment__form-radio2">
+								<input class="visually-hidden" type="radio" name="system" value="visa">
+								<span class="payment__form-image2"></span>
+								<span class="visually-hidden">visa</span>
+							</label>
+							<label class="payment__form-radio payment__form-radio3">
+								<input class="visually-hidden" type="radio" name="system" value="master-card">
+								<span class="payment__form-image3"></span>
+								<span class="visually-hidden">Master-Card</span>
+							</label>
+						</div>
+					</div>
+					<button class="btn payment__btn">Перевести</button>
 				</form>
 			</section>
 		</div>
+
+		<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
 		<div class="container">
 			<section class="contacts">
 				<h2 class="contacts__title">Контакты и реквизиты</h2>

@@ -1,0 +1,154 @@
+.payment__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment__form-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.payment__btn {
+  box-sizing: border-box;
+  align-self: center;
+  width: 183px;
+  min-height: 42px;
+  border-style: none;
+  margin-bottom: 35px;
+}
+
+.payment__form-radio-wrapper{
+  margin-bottom: 35px;
+  min-height: 50px;
+}
+
+.payment__form-radio {
+  position: relative;
+}
+
+
+
+.payment__form-image1 {
+  display: inline-block;
+  width: 82px;
+  height: 35px;
+  background: url("../../img/yandex-money.png") no-repeat 50% 50%;
+  background-size: 100%;
+}
+
+.payment__form-image2 {
+  display: inline-block;
+  margin-left: 5px;
+  width: 109px;
+  height: 35px;
+  background: url("../../img/Visa.png") no-repeat 50% 50%;
+  background-size: 100%;
+}
+
+.payment__form-image3 {
+  display: inline-block;
+  margin-left: 5px;
+  width: 74px;
+  height: 35px;
+  background: url("../../img/MasterCard.png") no-repeat 50% 50%;
+  background-size: 75%;
+}
+
+.payment__form-radio input:checked + .payment__form-image3 {
+  outline: 2px solid  green;
+}
+.payment__form-radio input:checked + .payment__form-image1 {
+  outline: 2px solid  green;
+}
+.payment__form-radio input:checked + .payment__form-image2 {
+  outline: 2px solid  green;
+}
+
+.payment__form-lebel-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment__visib-bm {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .payment__form-label {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .payment__form-radio-wrapper{
+    margin-bottom: 40px;
+    margin-right: 80px;
+  }
+
+  .payment__form {
+    //flex-direction: row;
+    //justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .payment__form-lebel-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+  }
+  .payment__btn {
+    //margin-top: 70px;
+  }
+
+  .payment__form-image1 {
+    width: 99px;
+    height: 40px;
+    background-size: 100%;
+  }
+
+  .payment__form-image2 {
+    width: 122px;
+    height: 40px;
+    background-size: 100%;
+  }
+
+  .payment__form-image3 {
+    width: 85px;
+    height: 42px;
+    background-size: 85%;
+  }
+
+  .payment__form-lebel-wrapper input {
+    width: 340px;
+  }
+
+  .payment__form-label1 {
+    margin-left: 118px;
+    margin-right: 8px;
+  }
+
+  .payment__form-label2 {
+    margin-left: 60px;
+
+  }
+
+  .payment__visib-sm {
+    display: none;
+  }
+
+  .payment__visib-bm {
+    display: inline-block;
+    padding-top: 10px;
+  }
+  .input0 {
+    margin-right: 40px;
+  }
+
+
+}
