@@ -423,9 +423,6 @@ service__form-input--lch"  type="text" value="" name="date"	placeholder="А1234�
 			</div>
 		</div>
 	</main>
-
-	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
 	<footer class="page-footer">
 		<div class="container">
 			<p class="page-footer__info">Сайт не является офертой, определяемой положениями ст. 437 ГК РФ</p>
@@ -444,6 +441,21 @@ service__form-input--lch"  type="text" value="" name="date"	placeholder="А1234�
 
 	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
+	<form class="popup__form questions__form popup--inactive" action="http://scooterlabs.com/echo" method="post">
+		<button class="popup__button"><span class="visually-hidden">Close Popup</span></button>
+		<h3 class="questions__form-title">Остались вопросы?</h3>
+		<label class="label questions__form-label" for="user-name-popup">Как вас зовут</label>
+		<input class="questions__form-input input" id="user-name-popup" type="text" name="user-name" placeholder="Иванов Иван">
+		<label class="label questions__form-label" for="user-phone-popup">Ваш номер телефона</label>
+		<input class="questions__form-input input" id="user-phone-popup" type="tel" name="user-phone" placeholder="+385030303">
+		<label class="label questions__form-label" for="user-time-popup">Удобрное время для звонка</label>
+		<input class="questions__form-input input" id="user-time-popup" type="email" aria-placeholder="bob@gmail.com" name="user-mail" placeholder="ivan@gmail.com">
+		<label class="checkbox questions__form-checkbox"><input class="checkbox__input" type="checkbox" name="accept-data-lost" value="yes"><span class="checkbox__icon">Согласен на обработку персональных данных</span></label>
+		<button class="btn service__next questions__button" type="submit">Отправить</button>
+	</form>
+
+	<div class="popup__overlay popup--inactive"></div>
+	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 <script src="./js/app.min.js"></script>
 </body>
