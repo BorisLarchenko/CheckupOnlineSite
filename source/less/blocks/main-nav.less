@@ -31,28 +31,17 @@
   }
 
   .main-nav--opened .main-nav__close {
-    position: relative;
+    position: absolute;
     top: 15px;
-    left: -15px;
+    right: 15px;
     display: block;
     align-self: flex-end;
-
-    background-color: transparent;
-    border: none;
+    width: 23px;
+    height: 23px;
+    background: transparent url("../../img/main-navCross.png") no-repeat 50% 50%;
+    border: 1px solid #c6c6c6;
+    border-radius: 50%;
   }
-
-    .main-nav__close::before {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      content: "";
-      display: block;
-      width: 23px;
-      height: 23px;
-      background: transparent url("../../img/main-navCross.png") no-repeat 50% 50%;
-      border: 1px solid #c6c6c6;
-      border-radius: 50%;
-    }
 
   .main-nav {
     position: absolute;
