@@ -15,6 +15,8 @@ closePopupForm.addEventListener('click', function (evt) {
 });
 
 var showHideModal = function () {
+  var mainBody = document.querySelector('body');
   backgroundOverlay.classList.toggle('popup--inactive');
-  popupForm.classList.toggle('popup--inactive')
+  popupForm.classList.toggle('popup--inactive');
+  mainBody.classList.toggle('main-body');
 };
