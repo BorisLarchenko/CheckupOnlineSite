@@ -248,6 +248,20 @@
   display: none;
 }
 
+.service__form-select {
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #cccccc;
+  &:active, &:focus {
+    color: #666666;
+  }
+
+  background: url("../img/arrowDownForm.png") no-repeat 95% 50%;
+
+}
+
 @media(min-width: 960px) {
   .service {
     width: 820px;
@@ -315,6 +329,8 @@
     font-size: 16px;
   }
 
+
+
   .service__manual {
     margin-bottom: 40px;
   }
@@ -359,6 +375,15 @@
   .service__form-input--mt {
     width: auto;
   }
+
+
+
+  .service__form-select {
+    width: 190px;
+  }
+
+
+
   .service__form-input--lch {
     width: 390px;
   }
